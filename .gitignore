@@ -169,8 +169,6 @@ package-lock.json
 .env*
 !.env.example
 .wrangler/
-wrangler.jsonc
-
 .claude
 .trae
 

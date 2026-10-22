@@ -4,17 +4,32 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "cwd-api",
+	"name": "Comment",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-01-03",
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
 	"workers_dev": true,
-	"preview_urls": true,	
+	"preview_urls": true,
 	"send_email": [
 		{
 			"name": "SEND_EMAIL"
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "CWD_DB",
+			"database_name": "Comment",
+			"database_id": "64796967-04e5-4db8-a02a-89bfd3ba39e1",
+			"remote": true
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "CWD_AUTH_KV",
+			"id": "d1e740f827814060aae7856bca2f57c5",
+			"remote": true
 		}
 	]
 }
